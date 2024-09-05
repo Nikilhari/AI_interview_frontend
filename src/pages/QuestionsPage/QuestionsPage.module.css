@@ -1,0 +1,76 @@
+.uploadPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--title-color-dark);
+  }
+  
+  .questionContainer {
+    margin-bottom: 20px;
+  }
+  
+  .questionText {
+    font-size: var(--h2-font);
+    color: var(--title-color);
+  }
+  
+  .answerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputFile {
+    margin-bottom: 20px;
+    background-color: var(--container-color);
+    color: var(--container-color-opp);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .uploadButton {
+    background-color: #6200ea;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .uploadButton:hover {
+    background-color: #3700b3;
+  }
+  
+  .skillsContainer {
+    margin-top: 30px;
+    font-size: var(--small-font);
+  }
+  
+  .dialogueBox {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--profile-box-shadow);
+    z-index: var(--z-modal);
+    color: var(--title-color-dark);
+  }
+  
+  .dialogueBox p {
+    margin: 0;
+    font-size: var(--normal-font);
+  }
