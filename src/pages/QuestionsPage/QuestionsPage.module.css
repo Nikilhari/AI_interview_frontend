@@ -32,12 +32,26 @@
     margin-bottom: 20px;
     background-color: var(--container-color);
     color: var(--container-color-opp);
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--text-color);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--text-color);
     width: 100%;
-    max-width: 400px;
-  }
+    max-width: 500px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.inputFile:focus {
+    border-color: #6200ea;
+    outline: none;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.5);
+}
+
+.inputFile::placeholder {
+    color: var(--text-color-light);
+}
+
   
   .uploadButton {
     background-color: #6200ea;
@@ -47,6 +61,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 1rem;
   }
   
   .uploadButton:hover {
@@ -61,7 +76,7 @@
   .dialogueBox {
     position: fixed;
     top: 20%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 10px;
